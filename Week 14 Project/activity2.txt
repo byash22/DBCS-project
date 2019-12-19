@@ -1,0 +1,94 @@
+mysql> select * from lifecycle;
++----+------------+-------------+
+| ID | name       | Description |
++----+------------+-------------+
+|  1 | lifecycle1 | testing1    |
+|  2 | lifecycle2 | testing2    |
+|  3 | lifecycle3 | testing3    |
++----+------------+-------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from artifacts;;
++---------+-----------+------------------+
+| Arti_ID | arti_name | arti_Description |
++---------+-----------+------------------+
+|       1 | artifact1 | testing1         |
+|       2 | artifact2 | testing2         |
+|       3 | artifact3 | testing3         |
++---------+-----------+------------------+
+3 rows in set (0.00 sec)
+
+ERROR: 
+No query specified
+
+mysql> select * from conditions;
++----------+------------+-------------------+
+| condi_ID | condi_name | condi_Description |
++----------+------------+-------------------+
+|        1 | condition1 | testing1          |
+|        2 | condition2 | testing2          |
+|        3 | condition3 | testing3          |
++----------+------------+-------------------+
+3 rows in set (0.02 sec)
+
+mysql> select * from defects;
++-----------+-------------+--------------------+
+| defect_ID | defect_name | defect_Description |
++-----------+-------------+--------------------+
+|         1 | defect1     | testing1           |
+|         2 | defect2     | testing2           |
+|         3 | defect3     | testing3           |
++-----------+-------------+--------------------+
+3 rows in set (0.03 sec)
+
+mysql> select * from efforts;
++-----------+-------------+--------------------+-----------------+----------------------+
+| effort_ID | effort_name | effort_Description | effort_category | effort_category_type |
++-----------+-------------+--------------------+-----------------+----------------------+
+|         1 | effort1     | testing1           | category1       | type1                |
+|         2 | effort2     | testing2           | category2       | type2                |
+|         3 | effort3     | testing3           | category3       | type3                |
++-----------+-------------+--------------------+-----------------+----------------------+
+3 rows in set (0.02 sec)
+
+mysql> select * from plans;
++---------+-----------+------------------+
+| plan_ID | plan_name | plan_Description |
++---------+-----------+------------------+
+|       1 | plan1     | testing1         |
+|       2 | plan2     | testing2         |
+|       3 | plan3     | testing3         |
++---------+-----------+------------------+
+3 rows in set (0.02 sec)
+
+mysql> select * from steps;
++---------+-----------+------------------+
+| step_ID | step_name | step_Description |
++---------+-----------+------------------+
+|       1 | step1     | testing1         |
+|       2 | step2     | testing2         |
+|       3 | step3     | testing3         |
++---------+-----------+------------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from roles;
++---------+-----------+------------------+
+| role_ID | role_name | role_Description |
++---------+-----------+------------------+
+|       1 | role1     | testing1         |
+|       2 | role2     | testing2         |
+|       3 | role3     | testing3         |
++---------+-----------+------------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from tasks;
++---------+-----------+------------------+------------------------+--------------------+-------------------+------------+
+| task_ID | task_name | task_Description | task_selected_artifact | task_used_artifact | produced_artifact | roles_name |
++---------+-----------+------------------+------------------------+--------------------+-------------------+------------+
+|       1 | task1     | testing1         | artifact1              | artifact1          | artifact1         | role1      |
+|       2 | task2     | testing2         | artifact2              | artifact2          | artifact2         | role2      |
+|       3 | task3     | testing3         | artifact3              | artifact3          | artifact3         | role3      |
++---------+-----------+------------------+------------------------+--------------------+-------------------+------------+
+3 rows in set (0.00 sec)
+
+mysql> notee;
